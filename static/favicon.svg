@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="600"
+   viewBox="0 0 158.75 158.75"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (ce6663b3b7, 2021-05-25)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.70299985"
+     inkscape:cx="193.45666"
+     inkscape:cy="332.14801"
+     inkscape:window-width="1306"
+     inkscape:window-height="704"
+     inkscape:window-x="60"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#000080;stroke-width:6.20641"
+       id="path846"
+       cx="79.155342"
+       cy="79.426361"
+       rx="79.14151"
+       ry="79.069016" />
+    <text
+       xml:space="preserve"
+       style="font-size:21.1667px;line-height:1.25;font-family:Loma;-inkscape-font-specification:Loma;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       x="43.087189"
+       y="74.04467"
+       id="text4384"><tspan
+         sodipodi:role="line"
+         id="tspan4382"
+         style="stroke-width:0.264583;-inkscape-font-specification:Loma;font-family:Loma;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         x="43.087189"
+         y="74.04467" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:89.0005px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#00ff00;fill-opacity:1;stroke-width:1.1125"
+       x="31.212069"
+       y="66.1147"
+       id="text9492"
+       transform="scale(0.92382473,1.0824564)"><tspan
+         sodipodi:role="line"
+         id="tspan9490"
+         style="fill:#00ff00;fill-opacity:1;stroke-width:1.1125"
+         x="31.212069"
+         y="66.1147">EM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.1667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       x="61.373238"
+       y="112.25276"
+       id="text12524"><tspan
+         sodipodi:role="line"
+         id="tspan12522"
+         style="stroke-width:0.264583;-inkscape-font-specification:Ubuntu;font-family:Ubuntu;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         x="61.373238"
+         y="112.25276" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:104.151px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:1.30188;fill:#00ffff;fill-opacity:1"
+       x="33.636074"
+       y="147.62317"
+       id="text25169"
+       transform="scale(1.0131097,0.98705995)"><tspan
+         sodipodi:role="line"
+         id="tspan25167"
+         style="stroke-width:1.30188;fill:#00ffff;fill-opacity:1"
+         x="33.636074"
+         y="147.62317">M</tspan></text>
+  </g>
+</svg>

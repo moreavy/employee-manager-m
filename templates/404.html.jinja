@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>404 Error</title>
+    <style>
+        * {
+            color: #ffffff;
+            background-color: #000000;
+            font-family: Ubuntu, Roboto, Tahoma, Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        a {
+            color: #0000ff;
+        }
+
+        a:hover {
+            color: #7D7Dff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color: #7D7Dff; color: #000000;">404: Not Found</h1>
+    <hr>
+    <p>{{ error }} Click <a href="/">here</a> to vist <a href="https://github.com/moreavy/employee-manager-m">Employee
+            Manager M</a>.</p>
+</body>
+
+</html>
