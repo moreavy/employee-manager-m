@@ -65,6 +65,10 @@
                 Employee</button>
         </form>
         <hr>
+        <div style="text-align: center;">
+            <a href="/tabular">View in tabular format</a>
+        </div>
+        <hr>
         <ul class="employees w3-left-align">
             {% if (db.get("employees")) %}
             {% for employee in db.get("employees") %}
