@@ -5,6 +5,10 @@ app = Flask(__name__)
 title = "Employee Manager M"
 
 
+def format_dob(d, m, y):
+    return d+"/"+m+"/"+y
+
+
 def add_employee(name: str, post: str, day: int, month: int, year: int, salary: int):
     employees = DB.get("employees")
     to = {
@@ -63,3 +67,8 @@ def page_not_found(error):
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+
+@app.route("/tabular")
+def tabular():
+    return render_template("tabular.html.jinja", employees=DB.get("employees"), format_dob=format_dob, url_for=url_for)
