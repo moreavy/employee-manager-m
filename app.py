@@ -32,7 +32,7 @@ def start():
 
 @app.route("/workspace")
 def workspace():
-    return render_template("index.html.jinja", title=title, db=DB, url_for=url_for)
+    return render_template("index.html.jinja", title=title, db=DB ,employees=DB.get("employees"), url_for=url_for, format_dob=format_dob)
 
 
 @app.route("/add", methods=["POST"])
@@ -67,8 +67,3 @@ def page_not_found(error):
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
-
-
-@app.route("/tabular")
-def tabular():
-    return render_template("tabular.html.jinja", employees=DB.get("employees"), format_dob=format_dob, url_for=url_for)
