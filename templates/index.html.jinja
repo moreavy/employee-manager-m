@@ -23,15 +23,6 @@
             color: #9696ff;
         }
 
-        ul.employees {
-            list-style: none;
-            padding-left: 0px;
-        }
-
-        ul.employees ul.employee-data {
-            list-style: none;
-        }
-
         input[type="number"] {
             width: 80px;
         }
@@ -60,38 +51,36 @@
             </label><input class="w3-border" type="number" name="year" value="1950" /><br><br>
             <label>Salary (Per Month): </label><br>₹<input class="w3-border" type="number" name="salary" value="0"
                 style="width: 200px;" /><br><br>
-            <button type="submit" class="w3-button w3-round w3-medium w3-green w3-ripple"
-                onclick="addEmployee(giv('name'), giv('posting'), giv('day'), giv('month'), giv('year'), giv('salary'))">Add
-                Employee</button>
+            <button type="submit" class="w3-button w3-round w3-medium w3-green w3-ripple">Add Employee</button>
         </form>
-        <hr>
-        <div style="text-align: center;">
-            <a href="/tabular">View in tabular format</a>
-        </div>
-        <hr>
-        <ul class="employees w3-left-align">
-            {% if (db.get("employees")) %}
-            {% for employee in db.get("employees") %}
-            <li>
-                <ul class="employee-data">
-                    <li>Name: <b>{{ employee.name }}</b></li>
-                    <li>Post: <b>{{ employee.posting }}</b></li>
-                    <li>Date Of Birth: <b>{{ employee.dob.day }}/{{ employee.dob.month }}/{{ employee.dob.year }}</b>
-                    </li>
-                    <li>Salary (Per Month): <b>₹{{ employee.salary }}</b></li>
-                    <li>Employee ID: <b>{{ db.get("employees").index(employee) + 1 }}</b></li>
+        <br>
+        <table class="w3-table-all">
+            <tr>
+                <th>Full Name</th>
+                <th>Posting</th>
+                <th>Date Of Birth</th>
+                <th>Salary</th>
+                <th>Employee ID</th>
+            </tr>
+            {% for employee in employees %}
+            <tr>
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.posting }}</td>
+                <td>{{ format_dob(employee.dob.day, employee.dob.month, employee.dob.year) }}</td>
+                <td>{{ employee.salary }}</td>
+                <td>{{ employees.index(employee) + 1 }}</td>
+                <td>
                     <form action="/delete" method="POST">
                         <input type="number" value='{{ db.get("employees").index(employee) }}' style="display: none;"
                             name="id" />
                         <button type="submit"
                             class="w3-button w3-ripple w3-center w3-red w3-round">Remove/Delete</button>
                     </form>
-                </ul>
-            </li>
-            <hr>
+                </td>
+            </tr>
             {% endfor %}
-            {% endif %}
-        </ul>
+        </table>
+        <hr>
     </main>
     <footer class="w3-center">
         <p>Copyright © 2021 Avyukt More</p>
